@@ -1,0 +1,13 @@
+$primary-color: #e19720;
+$primary-color--light: #fad61d;
+$secondary-color: #811e09;
+$secondary-color--light: #f62d14;
+
+
+.primary-color{
+    color: $primary-color;
+}
+
+.secondary-color{
+    color: $secondary-color;
+}
