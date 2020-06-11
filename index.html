@@ -18,15 +18,23 @@
                         <span class="secondary-color">Catalog</span>
                     </h1>
                 </div>
-                <div class="offset-lg-4 col-lg-4 col-12">
-                    Wyszukiwarka
+                <div class="offset-lg-4 col-lg-4 col-12 search d-flex flex-column justify-content-center">
+                    <input type="text" name="search" id="search" class="search__input" placeholder="Search Pokemon..." autocomplete="off">
+                    <label for="search" class="search__label">Search Pokemon</label> 
                 </div>
             </div>
         </header>
         <main class="container">
-            <section class="row" data-content>
-
+            <section class="row justify-content-center" data-content>
+                <div class="catalog-content hide text-center" data-info>There are no results</div>
             </section>
+
+            <div class="loader hide" data-loader>Loading...</div>
+
+            <div class="row justify-content-center">
+                <button class="button mb-4 py-3 px-5" data-button>Load more</button>
+            </div> 
+            
         </main>
         <!-- START BOOTSTRAP 4 -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

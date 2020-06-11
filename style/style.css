@@ -4,4 +4,105 @@
 .secondary-color {
   color: #811e09; }
 
+.button {
+  color: #fff;
+  background-color: #e19720;
+  border: 0;
+  font-size: 24px;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  outline: none; }
+  .button:hover {
+    background-color: #fad61d;
+    color: #fff;
+    transition: all 0.5s;
+    cursor: pointer; }
+  .button:focus {
+    outline: none; }
+
+.hide {
+  display: none; }
+
+.search__input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  width: 300px;
+  border-bottom: 2px solid #f62d14; }
+  .search__input:focus {
+    border: none;
+    border-bottom: 2px solid #811e09;
+    outline: none; }
+  .search__input::-webkit-input-placeholder {
+    color: #000; }
+.search__input:placeholder-shown + .search__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-40px);
+  transition: opacity .3s, visibility .3s, transform .3s; }
+.search__label {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 5px;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: opacity .3s, visibility .3s, transform .3s; }
+
+.catalog-content {
+  font-size: 24px; }
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out; }
+
+.loader {
+  color: #fad61d;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s; }
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  color: #e19720; }
+
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s; }
+
+.loader:after {
+  left: 3.5em; }
+
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em; }
+  40% {
+    box-shadow: 0 2.5em 0 0; } }
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em; }
+  40% {
+    box-shadow: 0 2.5em 0 0; } }
+
 /*# sourceMappingURL=style.css.map */
